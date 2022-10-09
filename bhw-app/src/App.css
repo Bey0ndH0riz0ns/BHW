@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+.wrapper,
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: black;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  background-color: blue;
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tab {
+  color: aliceblue;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color:aliceblue
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 40vw;
+}
+
+.contentList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentListItem {
+  display: flex;
+  background-color: gray;
+  flex-direction: column;
+  margin-top: 1vh;
+  width: 40vw;
+}
+
+.contentListTitle {
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+
+.contentListDescription {
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 1vh;
+  width: 38vw;
+}
+
+.contentListInfo {
+  display: flex;
+  margin-left: 1vh;
+  margin-top: 1vh;
+}
+
+.chapters {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-top: 2vh;
+  padding-bottom: 13vh;
+}
+
+.chapterClick {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.chapterDropdown {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 16vw;
+  height: 4vh;
+  background-color: grey;
+}
+
+.dropdownHeader {
+  display: flex;
+  align-self: center;
+}
+
+.dropdownList {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+.dropdownListItem {
+  list-style: none;
+  margin-bottom: 0.5vh;
+  margin-top: 0.5vh;
 }
